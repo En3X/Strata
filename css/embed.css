@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+.whiteImg {
+  filter: invert(98%) sepia(0%) saturate(7477%) hue-rotate(264deg)
+    brightness(102%) contrast(94%);
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.statabox {
+  background: #3d3d3f;
+  width: 90%;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #fff;
+  user-select: none;
+  margin-bottom: 20px;
+}
+.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp);
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.title {
+  font-size: large;
+  font-weight: 500;
+}
+.description {
+  color: #7a7a7a;
+  font-size: small;
+  margin: 10px 0;
+}
+
+.stats {
+  display: flex;
+  column-gap: 10px;
+}
+.thumbnail {
+  width: 100%;
+  cursor: pointer;
+}
+.thumbnail > img {
+  width: 100%;
+}
+.stat-group {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  column-gap: 3px;
+  font-size: small;
+}
+.tagcapsule {
+  color: #70cf97;
+  cursor: pointer;
+  font-size: small;
+  border: 1px solid #70cf97;
+  width: fit-content;
+  padding: 3px 5px;
+  border-radius: 10px;
+  margin: 4px 0px;
+}
+.tags {
+  margin: 10px 0px;
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Stata",
+  "version": "1.0",
+  "permissions": ["tabs", "scripting"],
+  "description": "Feel free to write your description here!!",
+  "author": "En3X Dev",
+  "icons": {
+    "16": "./icon/icon16.png",
+    "48": "./icon/icon48.png",
+    "128": "./icon/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["control.js"],
+      "css": ["./css/embed.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "./icon/icon16.png",
+      "48": "./icon/icon48.png",
+      "128": "./icon/icon128.png"
+    },
+
+    "default_title": "Strata"
+  }
+}
